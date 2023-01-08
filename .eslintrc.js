@@ -5,10 +5,6 @@ module.exports = {
   extends: [
     'crowdstrike-node',
   ],
-  parserOptions: {
-    // eslint bug, not inheriting from eslint-config-crowdstrike correctly
-    ecmaVersion: 2020,
-  },
   overrides: [
     {
       files: 'test/**/*-test.js',
