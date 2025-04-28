@@ -1,6 +1,6 @@
 {
   "name": "browser-webdriver-downloader",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Install and wrap msedgedriver in Node.js",
   "bin": {
     "msedgedriver": "bin/msedgedriver.js"

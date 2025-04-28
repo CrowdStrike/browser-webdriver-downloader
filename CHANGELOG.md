@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.3](https://github.com/CrowdStrike/browser-webdriver-downloader/compare/v3.0.2...v3.0.3) (2025-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency execa to v9 ([6f84569](https://github.com/CrowdStrike/browser-webdriver-downloader/commit/6f84569115430528914a353cf37f7fee3b6b8122))
+
 ### [3.0.2](https://github.com/CrowdStrike/browser-webdriver-downloader/compare/v3.0.1...v3.0.2) (2024-03-04)
 
 
