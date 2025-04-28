@@ -8,6 +8,8 @@ const { oldVersion } = require('../helpers/edge');
 const installerPath = require.resolve('../../bin/install-msedgedriver');
 const binPath = require.resolve('../../bin/msedgedriver.js');
 
+const startedRegex = /^msedgedriver was started successfully on port \d+\.$/m;
+
 describe(path.basename(binPath), function() {
   this.timeout(30e3);
 
@@ -27,7 +29,7 @@ describe(path.basename(binPath), function() {
     ps.stdout.on('data', data => {
       let stdout = data.toString();
 
-      if (stdout.includes('Microsoft Edge WebDriver was started successfully.')) {
+      if (startedRegex.test(stdout)) {
         ps.kill();
 
         isSuccess = true;
@@ -53,7 +55,7 @@ describe(path.basename(binPath), function() {
     ps.stdout.on('data', data => {
       let stdout = data.toString();
 
-      if (stdout.includes('Microsoft Edge WebDriver was started successfully.')) {
+      if (startedRegex.test(stdout)) {
         ps.kill();
 
         isSuccess = true;

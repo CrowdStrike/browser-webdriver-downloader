@@ -56,6 +56,9 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
 
+    - run: brew install --cask microsoft-edge
+      if: matrix.os == 'macos-latest'
+
     - run: yarn install --frozen-lockfile --ignore-scripts
     - run: yarn test
 
@@ -81,8 +84,6 @@ jobs:
 
     - run: sudo rm $(which microsoft-edge)
       if: matrix.os == 'ubuntu-latest'
-    - run: sudo rm '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
-      if: matrix.os == 'macos-latest'
     - run: del 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
       if: matrix.os == 'windows-latest'
 
