@@ -123,7 +123,6 @@ async function getDetectedDriverVersion() {
 async function getLatestDriverVersion() {
   let options = getGotOptions(latestVersionUrl);
 
-  // eslint-disable-next-line node/no-missing-import
   const { got } = await import('got');
 
   let { body } = await got.get(latestVersionUrl, options);
@@ -220,7 +219,6 @@ async function download({ tmpPath, version }) {
 
   console.log(`Downloading ${downloadUrl}...`);
 
-  // eslint-disable-next-line node/no-missing-import
   const { got } = await import('got');
 
   await pipeline(
