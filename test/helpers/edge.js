@@ -1,6 +1,6 @@
 'use strict';
 
-const oldVersion = '102.0.1245.33';
+const oldVersion = '123.0.2420.97';
 
 module.exports = {
   oldVersion,
