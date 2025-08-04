@@ -13,7 +13,7 @@ const { HttpsProxyAgent } = require('https-proxy-agent');
 const platform = os.platform();
 const arch = os.arch();
 
-const downloadHost = 'https://msedgedriver.azureedge.net';
+const downloadHost = 'https://msedgedriver.microsoft.com';
 const latestVersionUrl = `${downloadHost}/LATEST_STABLE`;
 
 const driversRoot = path.join(__dirname, '../bin');
