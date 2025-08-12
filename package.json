@@ -49,7 +49,7 @@
     "got": "^12.0.0",
     "https-proxy-agent": "^7.0.2",
     "proxy-from-env": "^1.1.0",
-    "tmp": "0.2.3",
+    "tmp": "0.2.5",
     "yn": "^5.0.0"
   },
   "devDependencies": {
